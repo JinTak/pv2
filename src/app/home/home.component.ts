@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
               }
             },
             "color": {
-              "value": "#0000ff"
+              "value": "#fff"
             },
             "shape": {
               "type": "circle",
@@ -43,11 +43,6 @@ export class HomeComponent implements OnInit {
               },
               "polygon": {
                 "nb_sides": 5
-              },
-              "image": {
-                "src": "img/github.svg",
-                "width": 100,
-                "height": 100
               }
             },
             "opacity": {
@@ -55,7 +50,7 @@ export class HomeComponent implements OnInit {
               "random": false,
               "anim": {
                 "enable": false,
-                "speed": 1,
+                "speed": .3,
                 "opacity_min": 0.1,
                 "sync": false
               }
@@ -65,7 +60,7 @@ export class HomeComponent implements OnInit {
               "random": true,
               "anim": {
                 "enable": false,
-                "speed": 40,
+                "speed": 20,
                 "size_min": 0.1,
                 "sync": false
               }
@@ -73,9 +68,9 @@ export class HomeComponent implements OnInit {
             "line_linked": {
               "enable": true,
               "distance": 150,
-              "color": "#ffffff",
+              "color": "#fff",
               "opacity": 0.4,
-              "width": 1
+              "width": 1.3
             },
             "move": {
               "enable": true,
@@ -124,10 +119,10 @@ export class HomeComponent implements OnInit {
                 "duration": 0.4
               },
               "push": {
-                "particles_nb": 4
+                "particles_nb": 3
               },
               "remove": {
-                "particles_nb": 2
+                "particles_nb": 10
               }
             }
           }
