@@ -1,5 +1,5 @@
 
-<ul class="side-nav">
+<ul class="side-nav"  [@navItems]="navbarText.length" >
     <li *ngFor="let text of navbarText" [ngClass]="{'active': selectedItem == text}" (click)="highlightNavItem(text)" class="side-nav__item">
       <a routerLink="{{text | lowercase}}" class="side-nav__link">
         <span>{{text}}</span>
