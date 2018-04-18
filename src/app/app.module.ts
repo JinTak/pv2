@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 
@@ -21,7 +22,8 @@ import { ProjectsComponent } from './projects/projects.component';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
