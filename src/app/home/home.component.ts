@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  @HostBinding('attr.class') cssClass = 'home-container';
   myStyle: object = {};
   myParams: object = {};
   width: number = 100;
@@ -33,7 +34,7 @@ export class HomeComponent implements OnInit {
               }
             },
             "color": {
-              "value": "#fff"
+              "value": "#000"
             },
             "shape": {
               "type": "star",
