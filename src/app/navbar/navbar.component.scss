@@ -68,19 +68,25 @@
     padding: 2.5rem;
     color: 	#303030;
 
-    a {
+    p {
         cursor: default;
     }
 
    
-    .jump:hover {
+    &:hover .jump:nth-child(even) {
         display: inline-block;
         color: lime;
-        transition: all .2s;
+        transition: all .3s;
 
-        transform: scale(1.3);
+        transform: translateY(-3px);
     }
-    
+    &:hover .jump:nth-child(odd) {
+        display: inline-block;
+        color: yellow;
+        transition: all .3s;
+
+        transform: translateY(3px);
+    }
 }
 
 
