@@ -4,6 +4,19 @@
     width: 100%;
     // background: radial-gradient(rgba(0, 153, 255, 0.5), rgba(0, 38, 253, 0.8));
     background: radial-gradient(rgba(0, 153, 255, 0.3), rgba(0, 38, 253, 0.8));
-    
+    position: relative;
+
+    .profile-pic-container {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 75%;
+        width: 75%;
+        transform: translateX(-50%);
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
 }
 

@@ -34,13 +34,13 @@ export class HomeComponent implements OnInit {
               }
             },
             "color": {
-              "value": "#000"
+              "value": "#0064ff"
             },
             "shape": {
               "type": "star",
               "stroke": {
                 "width": 0,
-                "color": "#000000"
+                "color": "#00000"
               }
             },
             "opacity": {
