@@ -36,13 +36,10 @@ export class HomeComponent implements OnInit {
               "value": "#fff"
             },
             "shape": {
-              "type": "circle",
+              "type": "star",
               "stroke": {
                 "width": 0,
                 "color": "#000000"
-              },
-              "polygon": {
-                "nb_sides": 5
               }
             },
             "opacity": {
@@ -92,7 +89,7 @@ export class HomeComponent implements OnInit {
             "events": {
               "onhover": {
                 "enable": true,
-                "mode": "repulse"
+                "mode": "grab"
               },
               "onclick": {
                 "enable": true,
