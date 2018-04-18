@@ -1,0 +1,21 @@
+
+<ul class="side-nav">
+    <li *ngFor="let text of navbarText" [ngClass]="{'active': selectedItem == text}" (click)="highlightNavItem(text)" class="side-nav__item">
+      <a routerLink="{{text | lowercase}}" class="side-nav__link">
+        <span>{{text}}</span>
+      </a>
+  </li> 
+</ul>
+
+<div class="legal">
+  <a>&copy; 2018 by 
+    <span>&nbsp;</span>
+    <span class="jump">J</span>
+    <span class="jump">i</span>
+    <span class="jump">n</span>
+    <span>&nbsp;</span>
+    <span class="jump">T</span>
+    <span class="jump">a</span>
+    <span class="jump">k</span>
+  </a>
+</div>
