@@ -19,7 +19,6 @@ import { trigger,stagger,style,transition,animate,keyframes,query } from '@angul
           ])) ]), {optional: true})
       ])
     ])
-
   ]
 })
 export class NavbarComponent {

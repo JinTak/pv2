@@ -1,16 +1,39 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding, AfterViewInit } from '@angular/core';
+import { trigger,stagger,style,transition,animate,keyframes,query,state } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
+  // animations: [
+
+    // trigger('profilePic', [
+    //   transition('* => *', [
+    //     query(':enter', style({opacity: 0}), {optional: true}),
+
+    //     query(':enter', stagger('300ms', [
+    //       animate('1s ease-in', keyframes([
+    //         style({opacity: 0, transform: 'translateY(-75%)', offset: 0}),
+    //         style({opacity: .5, transform: 'translateY(35px)', offset: .3}),
+    //         style({opacity: 1, transform: 'translateY(0)', offset: 1}),
+    //       ])) ]), {optional: true})
+    //   ])
+    // ])
+
+    // trigger('profilePic', [
+    //   state('none, void', style({opacity: 0, transform: 'translateY(-75%)', offset: 0})),
+    //   state('maximum', style({opacity: 1, transform: 'translateY(0)', offset: 1})),
+    //   transition('none => maximum', animate('100ms'))
+    // ])
+  // ]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
   @HostBinding('attr.class') cssClass = 'home-container';
   myStyle: object = {};
   myParams: object = {};
   width: number = 100;
   height: number = 100;
+  state: string = 'none';
 
   ngOnInit() {
       this.myStyle = {
@@ -23,7 +46,7 @@ export class HomeComponent implements OnInit {
           'right': 0,
           'bottom': 0,
       };
-
+ 
   this.myParams = {
           particles: {
             "number": {
@@ -126,4 +149,9 @@ export class HomeComponent implements OnInit {
           }
       }
   };
+
+  ngAfterViewInit() {
+    this.state = 'maximum';
   }
+
+}
