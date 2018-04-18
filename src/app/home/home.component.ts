@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
               }
             },
             "color": {
-              "value": "#ffffff"
+              "value": "#0000ff"
             },
             "shape": {
               "type": "circle",
@@ -134,4 +134,3 @@ export class HomeComponent implements OnInit {
       }
   };
   }
-}
