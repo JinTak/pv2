@@ -80,14 +80,14 @@
         color: lime;
         transition: all .3s;
 
-        transform: translateY(-5px);
+        transform: translateY(-5px) rotate(-30deg);
     }
     &:hover .jump:nth-child(odd) {
         display: inline-block;
         color: yellow;
         transition: all .3s;
 
-        transform: translateY(5px);
+        transform: translateY(5px) rotate(30deg);
     }
 }
 
