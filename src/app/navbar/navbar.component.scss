@@ -69,7 +69,7 @@
     text-align: center;
     padding: 2.5rem;
     color: #949596; 
-    margin-bottom: 2rem;	
+    margin-bottom: 1.5rem;	
 
     p {
         cursor: default;
@@ -80,14 +80,14 @@
         color: lime;
         transition: all .3s;
 
-        transform: translateY(-3px);
+        transform: translateY(-5px);
     }
     &:hover .jump:nth-child(odd) {
         display: inline-block;
         color: yellow;
         transition: all .3s;
 
-        transform: translateY(3px);
+        transform: translateY(5px);
     }
 }
 
