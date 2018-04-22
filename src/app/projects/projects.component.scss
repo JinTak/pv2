@@ -6,58 +6,60 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: linear-gradient(rgba(74, 152, 255, 0.623), rgba(5, 27, 100, 0.883)); 
+  // background: radial-gradient(rgba(74, 152, 255, 0.623), rgba(28, 77, 240, 0.883)); 
+  background: radial-gradient(rgba(74, 152, 255, 0.6), rgba(28, 77, 240, 0.8)); 
   
   overflow: scroll;
 
 
   .project__card {
     display: inline-block;
-    height: 50rem;
+    height: auto;
     width: 30%;
     margin: 0 auto;
     border-radius: 1rem;
     background: rgb(0, 0, 0);
     box-shadow: 0 2px 10px rgba(0,0,0,.5);
-    transition: all .2s;
-    // position: relative;
+    position: relative;
     margin-bottom: 1.5rem;
 
-    .project__info {
-      font-family: 'Montserrat', sans-serif;
-      color: white;
+    .card-mask {
+      text-align: center;
+      padding: 1.5rem;
 
-    }
+      p {
+        display: none;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
 
-    a {
-      border-radius: 1rem;
-      display: block;
-      height: 20rem;
-      width: 90%;
-      margin: 1.5rem auto;
-
-      img {
-        height: 100%;
-        width: 100%;
-        border-radius: 1rem;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
       }
     }
 
-    // &:not(:last-child) {
-    //   margin-bottom: 7rem;
-    // }
+
+    &:hover .card-mask {
+
+      p {
+        display: block;
+
+      }
+
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: rgba(255, 255, 255, .2);
+      // box-shadow: 0 0 20px rgb(255, 255, 255);
+      border-radius: 1rem;
+      transform: scale(.85);
+      transition: all .6s;
+      
+    }
+
 
    
   }
 }
-// h1 {
-
-//   display: inline-block;
-//   text-align: center;
-//   position: absolute;
-//   top:50%;
-//   left: 50%;
-//   font-size: 8rem;
-//   font-family: 'Sacramento','Montserrat', sans-serif;
-//   transform: translate(-50%, -50%);
-// }
