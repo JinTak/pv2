@@ -2,16 +2,23 @@
   height: 100%;
   width: 100%;
   position: relative;
-  background: radial-gradient(rgba(219, 69, 32, 0.5), rgba(243, 214, 52, 0.8));
+  background: linear-gradient(to top right, aqua, lime);
 }
 h1 {
-
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  border-radius: 2rem;
+  color: white;
+  background: rgb(0, 0, 0);
   display: inline-block;
   text-align: center;
   position: absolute;
+  height: 300px;
+  width: 400px;
   top:50%;
   left: 50%;
-  font-size: 8rem;
-  font-family: 'Sacramento','Montserrat', sans-serif;
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 8rem;
   transform: translate(-50%, -50%);
 }
