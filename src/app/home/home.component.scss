@@ -16,10 +16,23 @@
         text-transform: uppercase;
         text-align: center;
         margin-top: 1.5rem;
-        color: white;
+        color: #000;
         letter-spacing: 1rem;
-        text-shadow: 0 5px 20px rgba(255,255,255,.8);
-
+        text-shadow: 0 7px 20px rgb(0, 0, 0);
+    }
+    h3 {
+        position: absolute;
+        top: 22%;
+        left: 0;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 1.5rem;
+        color: #000;
+        letter-spacing: 1rem;
+        text-shadow: 0 7px 20px rgb(0, 0, 0);
     }
 
     .profile-pic-container {
