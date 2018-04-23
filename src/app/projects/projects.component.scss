@@ -23,6 +23,14 @@
     position: relative;
     margin-bottom: 1.5rem;
 
+    .project-image {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transform: scale(.9);
+      border-radius: 1rem;      
+    }
+
     .card-mask {
       text-align: center;
       padding: 1.5rem;
@@ -39,6 +47,7 @@
         }
       }
     }
+   
 
 
     &:hover .card-mask {
@@ -50,10 +59,10 @@
       height: 100%;
       width: 100%;
       position: absolute;
-      background: rgba(255, 255, 255, .2);
+      background: rgba(0, 0, 0, .8);
       // box-shadow: 0 0 20px rgb(255, 255, 255);
       border-radius: 1rem;
-      transform: scale(.85);
+      transform: scale(.9);
       transition: all .6s;
       
     }
