@@ -1,24 +1,17 @@
-<div class="projects-container">
-  <div class="project__card">
+<div class="projects-container" [@projectCards]="projects.length">
+  <div *ngFor="let project of projects" class="project__card">
     <img class="project-image" src="./assets/Mass.PNG" alt="EasyMass">
     <div class="card-mask">
-        <p>Easy Mass</p>
+        <!-- <p>{{project}}</p>
         <p>React JS</p>
         <p>Node</p>
         <p>Express</p>
-        <a href="https://www.easymass.herokuapp.com">Visit Website</a>
+        <a href="https://www.easymass.herokuapp.com">Visit Website</a> -->
     </div>
-    
-    <!-- <a href="https://easymass.herokuapp.com/" target="blank">
-      <img src="./assets/Mass.PNG" alt="EasyMass">
-    </a> -->
   </div>
-  <div class="project__card">
+
+  <!-- <div class="project__card">
       <div class="card-mask"></div>
-    
-    <!-- <a href="https://holistic-blog.herokuapp.com/" target="blank">
-      <img src="./assets/Holistic.PNG" alt="Holistic">
-    </a> -->
   </div>
   <div class="project__card">
     <div class="card-mask"></div>    
@@ -32,7 +25,7 @@
   </div>
   <div class="project__card">
     <div class="card-mask"></div>    
-  </div>
+  </div> -->
 </div>
 
 
