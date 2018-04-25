@@ -24,32 +24,38 @@ import { trigger, stagger, style, transition, animate, keyframes, query } from '
 export class ProjectsComponent {
 
   constructor() { }
-  hi = 'jin'
+  hi = 'jin';
 
   projects = [
     {
       title: 'Easy Mass',
-      img: 'EasyMass'
+      img: 'EasyMass',
+      url: 'https://easymass.herokuapp.com/'
     },
     {
       title: 'Holistic Blog',
-      img: 'Holistic'
+      img: 'Holistic',
+      url: 'https://holistic-blog.herokuapp.com/'
     },
     {
       title: 'Denver Nuggets Fansite',
-      img: 'Nuggets'
+      img: 'Nuggets',
+      url: 'https://jintak.github.io/nuggets/'
     },
     {
       title: 'Skycast',
-      img: 'Skycast'
+      img: 'Skycast',
+      url: 'https://sky-cast-1.herokuapp.com/'
     },
     {
       title: 'Colorodo Springs Korean American School',
-      img: 'CSKAS'
+      img: 'CSKAS',
+      url: 'http://cskas.nfshost.com/'
     },
     {
       title: 'Space Racer II',
-      img: 'SpaceRacer2'
+      img: 'SpaceRacer2',
+      url: 'https://jintak.github.io/Space-Racer-2/'
     }
 
   ];

@@ -2,6 +2,9 @@
   <div *ngFor="let project of projects" class="project__card">
     <img class="project-image" src="./assets/{{project.img}}.png" alt="EasyMass">
     <div class="card-mask">
+        <a href="{{project.url}}" target="blank">
+          <img src="./assets/go.svg" alt="Visit Website">
+        </a>
         <!-- <p>{{project}}</p>
         <p>React JS</p>
         <p>Node</p>

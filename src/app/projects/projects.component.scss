@@ -23,39 +23,53 @@
     box-shadow: 0 2px 10px rgba(0,0,0,.5);
     position: relative;
     margin-bottom: 1.5rem;
+   
 
     .project-image {
       position: absolute;
       height: 100%;
       width: 100%;
-      transform: scale(.9);
+      transform: scale(.95);
       border-radius: 1rem;      
     }
 
     .card-mask {
       text-align: center;
       padding: 1.5rem;
-
-      p {
-        display: none;
-        text-align: center;
-        font-size: 2rem;
-        font-family: 'Montserrat', sans-serif;
+      position: relative;
+      img {
+        visibility: hidden;
+        position: absolute;
+        height: 25%;
+        width: 25%;
         color: white;
-
-        &:not(:last-child) {
-          margin-bottom: 1rem;
-        }
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
-    }
-   
 
+      // p {
+      //   display: none;
+      //   text-align: center;
+      //   font-size: 2rem;
+      //   font-family: 'Montserrat', sans-serif;
+      //   color: white;
+
+      //   &:not(:last-child) {
+      //     margin-bottom: 1rem;
+      //   }
+      // }
+    }
 
     &:hover .card-mask {
-      p {
-        display: block;
-
+      
+      img {
+        visibility: visible;
       }
+      // p {
+      //   display: block;
+
+      // }
 
       height: 100%;
       width: 100%;

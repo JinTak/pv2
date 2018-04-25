@@ -38,6 +38,6 @@ export class NavbarComponent {
   highlightNavItem(text) {
     this.selectedItem = text;
   }
- 
+
 
 }
