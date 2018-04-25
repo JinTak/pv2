@@ -9,7 +9,7 @@
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 75% 80%, 75% 100%, 50% 80%, 0% 80%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 100%, 50% 85%, 0% 85%);
   font-family: 'Montserrat', sans-serif;  
-  border-radius: 2rem;
+  border-radius: 1rem;
   color: white;
   background: rgba(0, 0, 0,.4);
   position: absolute;
@@ -20,9 +20,11 @@
   transform: translate(-50%, -50%);
 
   h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     width: 40%;
     text-align: center;
-    font-size: 4rem;
+    font-size: 5rem;
     margin: 2rem auto 0;
     letter-spacing: .5rem;
   }
@@ -42,7 +44,7 @@
       width: 70%;
       height: 50px;
       background: rgba(0, 0, 0,.3);
-      border-radius: 2rem;
+      border-radius: 1rem;
       color: #fff;
       padding-left: 2rem;
 
@@ -60,7 +62,7 @@
       width: 70%;
       height: 60%;
       background: rgba(0, 0, 0,.3);
-      border-radius: 2rem;
+      border-radius: 1rem;
       color: #fff;
       padding: 2rem;
 
