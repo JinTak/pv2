@@ -1,6 +1,6 @@
 <div class="projects-container" [@projectCards]="projects.length">
   <div *ngFor="let project of projects" class="project__card">
-    <img class="project-image" src="./assets/Mass.PNG" alt="EasyMass">
+    <img class="project-image" src="./assets/{{project.img}}.png" alt="EasyMass">
     <div class="card-mask">
         <!-- <p>{{project}}</p>
         <p>React JS</p>
@@ -9,23 +9,6 @@
         <a href="https://www.easymass.herokuapp.com">Visit Website</a> -->
     </div>
   </div>
-
-  <!-- <div class="project__card">
-      <div class="card-mask"></div>
-  </div>
-  <div class="project__card">
-    <div class="card-mask"></div>    
-  </div>
-
-  <div class="project__card">
-    <div class="card-mask"></div>    
-  </div>
-  <div class="project__card">
-    <div class="card-mask"></div>    
-  </div>
-  <div class="project__card">
-    <div class="card-mask"></div>    
-  </div> -->
 </div>
 
 

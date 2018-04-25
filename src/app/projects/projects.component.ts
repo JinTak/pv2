@@ -11,12 +11,6 @@ import { trigger, stagger, style, transition, animate, keyframes, query } from '
       transition('* => *', [
         query(':enter', style({ opacity: 0 }), { optional: true }),
 
-        // query(':enter', stagger('100ms', [
-        //   animate('1s ease-in', keyframes([
-        //     style({ opacity: 0, transform: 'rotateY(0)', offset: 0 }),
-        //     style({ opacity: .5, transform: 'rotateY(180deg)', offset: .3 }),
-        //     style({ opacity: 1, transform: 'rotateY(360deg)', offset: 1 }),
-        //   ]))]), { optional: true })
         query(':enter', stagger('300ms', [
           animate('1s ease-in', keyframes([
             style({ opacity: 0, transform: 'translateY(-75%)', offset: 0 }),
@@ -30,14 +24,34 @@ import { trigger, stagger, style, transition, animate, keyframes, query } from '
 export class ProjectsComponent {
 
   constructor() { }
+  hi = 'jin'
 
-  projects: string[] = [
-    'Easy Mass',
-    'Holistic Blog',
-    'Korean American School',
-    'Denver Nuggets',
-    'Space Racer',
-    'hello'
+  projects = [
+    {
+      title: 'Easy Mass',
+      img: 'EasyMass'
+    },
+    {
+      title: 'Holistic Blog',
+      img: 'Holistic'
+    },
+    {
+      title: 'Denver Nuggets Fansite',
+      img: 'Nuggets'
+    },
+    {
+      title: 'Skycast',
+      img: 'Skycast'
+    },
+    {
+      title: 'Colorodo Springs Korean American School',
+      img: 'CSKAS'
+    },
+    {
+      title: 'Space Racer II',
+      img: 'SpaceRacer2'
+    }
+
   ];
 
 }

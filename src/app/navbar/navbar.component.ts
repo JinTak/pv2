@@ -11,7 +11,7 @@ import { trigger,stagger,style,transition,animate,keyframes,query } from '@angul
       transition('* => *', [
         query(':enter', style({opacity: 0}), {optional: true}),
 
-        query(':enter', stagger('300ms', [
+        query(':enter', stagger('350ms', [
           animate('1s ease-in', keyframes([
             style({opacity: 0, transform: 'translateY(-75%)', offset: 0}),
             style({opacity: .5, transform: 'translateY(35px)', offset: .3}),
