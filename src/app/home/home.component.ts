@@ -16,9 +16,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.myParams = {
       particles: {
         'number': {
-          'value': 80,
+          'value': 50,
           'density': {
-            'enable': true,
+            'enable': false,
             'value_area': 800
           }
         },
@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
           }
         },
         'size': {
-          'value': 4,
+          'value': 5,
           'random': true,
           'anim': {
             'enable': false,
