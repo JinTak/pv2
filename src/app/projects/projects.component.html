@@ -1,18 +1,16 @@
-<div class="projects-container" [@projectCards]="projects.length">
-  <div *ngFor="let project of projects" class="project__card">
-    <img class="project-image" src="./assets/{{project.img}}.png" alt="EasyMass">
-    <div class="card-mask">
-        <a href="{{project.url}}" target="blank">
-          <img src="./assets/go.svg" alt="Visit Website">
-        </a>
-        <!-- <p>{{project}}</p>
-        <p>React JS</p>
-        <p>Node</p>
-        <p>Express</p>
-        <a href="https://www.easymass.herokuapp.com">Visit Website</a> -->
+<div class="project-container">
+  <div *ngFor="let project of projects" class="project-card">
+    <div class="project-image">
+      <img src="./assets/{{project.img}}.png" alt={{project.title}}>
+    </div>
+    <div class="project-content">
+      <h1>{{project.title}}</h1>
+      <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime aperiam perspiciatis laborum </p>
+      <div class="project-tech">React | Node | Express | MOngo</div>
+      <div class="project-links">
+        <img src="" alt="Website Url">
+        <img src="" alt="Github">
+      </div>
     </div>
   </div>
 </div>
-
-
-

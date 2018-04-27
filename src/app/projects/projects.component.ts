@@ -24,8 +24,6 @@ import { trigger, stagger, style, transition, animate, keyframes, query } from '
 export class ProjectsComponent {
 
   constructor() { }
-  hi = 'jin';
-
   projects = [
     {
       title: 'Easy Mass',
