@@ -1,4 +1,4 @@
-<div class="project-container">
+<div class="project-container" [@projectCards]="projects.length">
   <div *ngFor="let project of projects" class="project-card">
     <div class="project-image">
       <img src="./assets/{{project.img}}.png" alt={{project.title}}>
