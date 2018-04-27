@@ -46,7 +46,7 @@ export class ProjectsComponent {
       url: 'https://sky-cast-1.herokuapp.com/'
     },
     {
-      title: 'Colorodo Springs Korean American School',
+      title: 'Colorado Springs Korean American School',
       img: 'CSKAS',
       url: 'http://cskas.nfshost.com/'
     },

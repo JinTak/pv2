@@ -22,7 +22,7 @@
       background: linear-gradient(#fadfaa, #fd9f2b);
       .project-image {
         box-shadow: 0 0 25px 2px rgba(255, 0, 0,.6);
-      }   
+      }  
     }
     &:nth-child(2) {
       background: linear-gradient(#c3faae, #a4d22d);
@@ -43,13 +43,13 @@
       }   
     }
     &:nth-child(5) {
-      background: linear-gradient(#f1f0f0, #4366c1);
+      background: linear-gradient(#ffabab, #617fcc);
       .project-image {
         box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.623);
       }   
     }
     &:nth-child(6) {
-      background: linear-gradient(#0c2439, #553be6);
+      background: linear-gradient(#3b73a5, #9c8df0);
       .project-image {
         box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.623);
       }   
@@ -74,6 +74,22 @@
     .project-content {
       height: 275px;
       width: 60%;
+
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        font-family: 'Righteous', 'Montserrat', sans-serif;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 2.5rem;
+        margin-bottom: 1.6rem;
+
+        &:nth-child(3) {
+          font-weight: bold;
+          font-style: italic;
+        }
+      }
     }
   }
 }
