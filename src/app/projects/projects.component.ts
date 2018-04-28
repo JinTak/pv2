@@ -69,7 +69,7 @@ export class ProjectsComponent {
       title: 'Space Racer II',
       img: 'SpaceRacer2',
       url: 'https://jintak.github.io/Space-Racer-2/',
-      github: 'https://github.com/JinTak/Space-Racer-',
+      github: 'https://github.com/JinTak/Space-Racer-2',
       description: 'Web Browser Game where you shoot asteroids to earn bitcoins!',
       tech: 'HTML5 | CSS3 | Javascript'      
     }
