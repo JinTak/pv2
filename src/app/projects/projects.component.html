@@ -5,11 +5,11 @@
     </div>
     <div class="project-content">
       <h1>{{project.title}}</h1>
-      <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime aperiam perspiciatis laborum </p>
-      <p class="project-tech">React | Node | Express | MOngo</p>
+      <p class="project-description">{{project.description}} </p>
+      <p class="project-tech">{{project.tech}}</p>
       <div class="project-links">
-        <img src="" alt="Website Url">
-        <img src="" alt="Github">
+        <a class="url-link" href="{{project.url}}" target="blank"><img src="./assets/visit.svg" alt="Website Url"></a>
+        <a class="github-link" href="{{project.github}}" target="blank"><img src="./assets/github.svg" alt="Github"></a>
       </div>
     </div>
   </div>
