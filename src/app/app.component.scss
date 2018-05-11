@@ -7,14 +7,11 @@
     // background: grey;
 
     navbar {
-        // flex: 0 0 15%;
         min-width: 245px;
-        // background: linear-gradient(to top right, rgba(255, 53, 53, 0.43), rgba(24, 24, 217, 0.47));
         display: flex;
         flex-direction: column; 
         justify-content: space-between;
-        box-shadow: 5px 0 15px rgba(0,0,0,.6);
-        // background: linear-gradient(to top right, #33478f, rgba(0, 0, 0, 0.774));
+        box-shadow: 5px 0 20px rgba(0,0,0,.6);
         background-color: #000;
         
  
@@ -22,8 +19,6 @@
 
     main {
         flex: 1;
-        // background: linear-gradient(to bottom, rgba(0, 38, 253, 0.7), rgba(0, 153, 255, 0.74));
-        // background: radial-gradient(rgba(0, 153, 255, 0.5), rgba(0, 38, 253, 0.8));
 
     }
 
