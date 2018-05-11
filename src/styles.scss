@@ -24,3 +24,48 @@ a:visited {
     color: #000;
     text-decoration: none;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Titan+One');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Titan One';
+}
+
+#loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 5rem;
+  color: #f5f5f5;
+}
+#loading:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #000;
+  overflow: hidden;
+  animation: loading 10s linear infinite;
+  border-right: 5px solid #000;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+    color: aqua;
+  }
+  100% {
+    width: 0;
+  }
+}
