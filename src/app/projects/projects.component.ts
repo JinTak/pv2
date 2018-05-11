@@ -29,48 +29,48 @@ export class ProjectsComponent {
     {
       title: 'Easy Mass',
       img: 'EasyMass',
-      url: 'https: //easymass.herokuapp.com/',
-      github: 'https: //github.com/JinTak/Mass-React',
+      url: 'https://easymass.herokuapp.com/',
+      github: 'https://github.com/JinTak/Mass-React',
       description: 'Calorie / Macro tracking app to help with fitness goals',
       tech: 'React JS | Express JS | Node JS | Postgres'
     },
     {
       title: 'Holistic Blog',
       img: 'Holistic',
-      url: 'https: //holistic-blog.herokuapp.com/',
-      github: 'https: //github.com/JinTak/Holistic-Blog',
+      url: 'https://holistic-blog.herokuapp.com/',
+      github: 'https://github.com/JinTak/Holistic-Blog',
       description: 'Blog/ e-commerce prototype for holistic products',
       tech: 'Angular 5 | Node JS | Express JS | MongoDB | Postgres'
     },
     {
       title: 'Denver Nuggets Fansite',
       img: 'Nuggets',
-      url: 'https: //jintak.github.io/nuggets/',
-      github: 'https: //github.com/JinTak/nuggets',
+      url: 'https://jintak.github.io/nuggets/',
+      github: 'https://github.com/JinTak/nuggets',
       description: 'Denver Nuggets Fansite because I love the Nuggets',
       tech: 'HTML5 | CSS3 | SCSS '
     },
     {
       title: 'Skycast',
       img: 'Skycast',
-      url: 'https: //sky-cast-1.herokuapp.com/',
-      github: 'https: //github.com/JinTak/dark-sky',
+      url: 'https://sky-cast-1.herokuapp.com/',
+      github: 'https://github.com/JinTak/dark-sky',
       description: 'Simple, sleek, modern weather interface',
       tech: 'React JS | Express JS | Node JS | Postgres'
     },
     {
       title: 'Colorado Springs Korean American School',
       img: 'CSKAS',
-      url: 'http: //cskas.nfshost.com/',
-      github: 'http: //cskas.nfshost.com/',
+      url: 'http://cskas.nfshost.com/',
+      github: 'http://cskas.nfshost.com/',
       description: 'Website for non profit Korean-American school',
       tech: 'HTML5 | CSS3 | Javascript'
     },
     {
       title: 'Space Racer II',
       img: 'SpaceRacer2',
-      url: 'https: //jintak.github.io/Space-Racer-2/',
-      github: 'https: //github.com/JinTak/Space-Racer-2',
+      url: 'https://jintak.github.io/Space-Racer-2/',
+      github: 'https://github.com/JinTak/Space-Racer-2',
       description: 'Web Browser Game where you shoot asteroids to earn bitcoins!',
       tech: 'HTML5 | CSS3 | Javascript'
     }
