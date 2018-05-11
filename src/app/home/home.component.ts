@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
           }
         },
         'size': {
-          'value': 5,
+          'value': 6,
           'random': true,
           'anim': {
             'enable': false,
