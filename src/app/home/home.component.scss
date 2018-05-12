@@ -1,5 +1,5 @@
 .home-container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: radial-gradient(rgba(0, 153, 255, 0.3), rgba(0, 38, 253, 0.829));
     position: relative;
@@ -47,3 +47,13 @@
     }
 }
 
+@media only screen and (max-width: 1400px) {
+    .home-container {
+        h1 {
+            font-size: 12rem;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+    }
+}

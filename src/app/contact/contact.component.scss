@@ -20,11 +20,11 @@
   transform: translate(-50%, -50%);
 
   h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Yellowtail', 'Montserrat', sans-serif;
     font-weight: 400;
     width: 40%;
     text-align: center;
-    font-size: 5rem;
+    font-size: 6rem;
     margin: 2rem auto 0;
     letter-spacing: .5rem;
   }
@@ -85,14 +85,31 @@
   padding: 0;
 
   &:hover {
-    // transform: translateY(-.6rem);
-    // box-shadow: 0 .6rem 1.5rem rgba(0,0,0,.4);
     border: 3px solid aquamarine;
-    
   }
-  // &:active {
-  //   transform: translateY(0);
-  //   box-shadow: none;
-  // }
+}
+
+@media only screen and (max-width: 1400px) {
+  .form-container {
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    form {
+
+      input {
+        height: 40px;
+      }
+
+      textarea {
+        height: 45%;
+
+        &::placeholder {
+          color: rgb(187, 187, 187);
+        }
+      }
+    }
+  }
 
 }
