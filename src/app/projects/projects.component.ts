@@ -71,7 +71,7 @@ export class ProjectsComponent {
       img: 'SpaceRacer2',
       url: 'https://jintak.github.io/Space-Racer-2/',
       github: 'https://github.com/JinTak/Space-Racer-2',
-      description: 'Web Browser Game where you shoot asteroids to earn bitcoins!',
+      description: 'Game where you shoot asteroids to earn bitcoins!',
       tech: 'HTML5 | CSS3 | Javascript'
     }
   ];

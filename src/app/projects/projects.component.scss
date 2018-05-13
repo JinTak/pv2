@@ -26,13 +26,13 @@
     }
     
     &:first-child {
-      background: linear-gradient(45deg, #fd9f2b,#fadfaa);
+      background: linear-gradient(45deg, #fa8900,#fadfaa);
     }
     &:nth-child(2) {
-      background: linear-gradient(45deg, #a4d22d, #c3faae);  
+      background: linear-gradient(45deg, #3acf1c, #c3faae);  
     }
     &:nth-child(3) {
-      background: linear-gradient(45deg, #95d6ff, #fafc86); 
+      background: linear-gradient(45deg, #46b0f1, #f9fc5d); 
       .project-content {
         h1 {
           font-size: 2.7rem;
@@ -73,11 +73,10 @@
       text-shadow: 0 2px 7px rgba(0,0,0,.4);
       text-align: center;
       position: relative;
-      padding-top: 1rem;
 
       h1 {
         font-size: 3rem;
-        margin: 3rem auto;
+        margin: 2.5rem auto 1.5rem;
         font-family: 'Righteous', 'Montserrat', sans-serif;
         text-transform: uppercase;
       }
@@ -85,6 +84,7 @@
         font-size: 1.5rem;
         font-family: 'Montserrat';
         margin-bottom: 1.6rem;
+        padding: 0 1rem;
         // color: #000;
       }
       .project-tech {
