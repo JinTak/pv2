@@ -19,19 +19,20 @@
     margin: 2rem;
     border-radius: 1rem;
     box-shadow: 0 5px 10px 2px rgba(0,0,0,.4);
+    transition: all .7s;    
 
-    &:hover .project-image {
-      box-shadow: 0 15px 25px rgba(0,0,0,.4);
+    &:hover {
+      transform: scale(1.05);
     }
     
     &:first-child {
-      background: linear-gradient(#fd9f2b,#fadfaa);
+      background: linear-gradient(45deg, #fd9f2b,#fadfaa);
     }
     &:nth-child(2) {
-      background: linear-gradient(#a4d22d, #c3faae);  
+      background: linear-gradient(45deg, #a4d22d, #c3faae);  
     }
     &:nth-child(3) {
-      background: linear-gradient(#95d6ff, #fafc86); 
+      background: linear-gradient(45deg, #95d6ff, #fafc86); 
       .project-content {
         h1 {
           font-size: 2.7rem;
@@ -39,10 +40,10 @@
       }  
     }
     &:nth-child(4) {
-      background: linear-gradient(#c3ebf2, #6fb8ff); 
+      background: linear-gradient(45deg, #c3ebf2, #6fb8ff); 
     }
     &:nth-child(5) {
-      background: linear-gradient(#ffabab, #617fcc);
+      background: linear-gradient(45deg, #ffabab, #617fcc);
       .project-content {
         h1 {
           font-size: 2rem;
@@ -50,20 +51,20 @@
       }  
     }
     &:nth-child(6) {
-      background: linear-gradient(#3b73a5, #9c8df0);
+      background: linear-gradient(45deg, #3b73a5, #9c8df0);
     }
 
     .project-image {
       height: 200px;
-      width: 90%;
+      width: 200px;
       margin: 0 auto;
-      border-radius: 1rem;      
-      transition: all .2s;
+      border-radius: 50%;  
+      box-shadow: 0 15px 25px rgba(0,0,0,.4);    
      
       img {
         height: 100%;
         width: 100%;
-        border-radius: 1rem;
+        border-radius: 50%;
       }
     }
     .project-content {
