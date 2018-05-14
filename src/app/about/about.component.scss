@@ -5,8 +5,8 @@
   background: linear-gradient(to top right, aqua, lime);
 }
 .typewriter {
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 100%, 50% 85%, 0% 85%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 100%, 50% 85%, 0% 85%);
   border-radius: 2rem;
   color: white;
   background: rgb(0, 0, 0);
@@ -101,5 +101,9 @@
 @media only screen and (max-width: 1620px) {
   .typewriter {
     font-size: 1rem;
+    img {
+      height: 50px;
+      width: 50px;
+    }
   }
 }
