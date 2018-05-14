@@ -13,7 +13,7 @@
   display: inline-block;
   text-align: center;
   position: absolute;
-  height: 65%;
+  height: 80%;
   width: 68%;
   top: 50%;
   left: 50%;
@@ -34,33 +34,52 @@
     animation: 
       typing 4s steps(30, end);
 
-    &:nth-child(2) {
+    &:nth-of-type(2) {
       visibility: hidden;
       animation: 
         typing 4s 3s steps(30, end) forwards;
     }
-    &:nth-child(3) {
+    &:nth-of-type(3) {
       visibility: hidden;
       animation: 
-        typing 4s 7s steps(30, end) forwards;
+        typing 4s 6s steps(30, end) forwards;
+    }
+    &:nth-of-type(4) {
+      visibility: hidden;
+      animation: 
+        typing 4s 13s steps(30, end) forwards;
+    }
+    &:nth-of-type(5) {
+      visibility: hidden;
+      animation: 
+        typing 4s 17s steps(30, end) forwards;
     }
   }
   
   img {
+    display : inline-block;
     height: 80px;
     width: 80px;
-    margin-top: 3rem;
+    margin: 2rem;
+    transform: scale(0);
+
+    &:nth-of-type(1) {
+      animation: fadeIn 1s 16s ease-in forwards;
+    }
+    &:nth-of-type(2) {
+      animation: fadeIn 1s 10s ease-in forwards;
+    }
+    &:nth-of-type(3) {
+      animation: fadeIn 1s 16s ease-in forwards;
+    }
+    &:nth-of-type(4) {
+      animation: fadeIn 1s 18s ease-in forwards;
+    }
   }
 }
 
-  
 #blinking {
   animation: blink .5s infinite;
-}
-      
-.fadeIn {
-  transform: scale(0);
-  animation: fadeIn 1s ease-in 12s forwards;
 }
 
 /* The typing effect */
@@ -75,6 +94,6 @@
   50% { opacity: 1 }
 }
 
-@keyframes fadeIn{
+@keyframes fadeIn {
   to { transform: scale(1); }
 }
