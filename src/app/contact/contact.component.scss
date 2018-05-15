@@ -63,7 +63,7 @@
       display: block;
       margin: 1rem auto;
       width: 70%;
-      height: 60%;
+      height: 55%;
       background: rgba(255, 255, 255, 0.8);
       border-radius: 1rem;
       color: #000;
@@ -79,8 +79,9 @@
 }
 
 #form-submit {
-  width: 200px;
-  font-size: 2rem;
+  width: 170px;
+  height: 30px;
+  font-size: 1.7rem;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -89,10 +90,11 @@
   border-radius: 2rem;
   margin-top: 2rem;
   padding: 0;
-  transition: all .3s;
+  transition: all .2s;
 
   &:hover {
-    background: lime;
+    background: linear-gradient(to bottom right, aqua, rgb(28, 62, 255));
+    color: #fff;
   }
 }
 
@@ -119,6 +121,7 @@
 
 @media only screen and (max-width: 1150px) {
   .form-container {
+    height: 90%;
 
     h1 {
       font-size: 3.5rem;
