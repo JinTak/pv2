@@ -47,13 +47,51 @@
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1300px) {
     .home-container {
         h1 {
             font-size: 12rem;
         }
         h3 {
             font-size: 2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .home-container {
+        h1 {
+            font-size: 8rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        .profile-pic-container {
+            width: 100%;
+            height: 60%;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 420px) {
+    .home-container {
+        h1 {
+            font-size: 6rem;
+            padding-top: 9rem;
+            margin: 0;
+        }
+        h3 {
+            font-size: 1.8rem;
+            span {
+                display: none;
+            }
+        }
+        .profile-pic-container {
+            width: 100%;
+            height: 50%;
         }
     }
 }

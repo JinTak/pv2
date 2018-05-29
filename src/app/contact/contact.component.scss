@@ -8,8 +8,8 @@
   background-size: cover;
 }
 .form-container {
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 75% 80%, 75% 100%, 50% 80%, 0% 80%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 100%, 50% 85%, 0% 85%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 95%, 50% 85%, 0% 85%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 95%, 50% 85%, 0% 85%);
   font-family: 'Montserrat', sans-serif;  
   border-radius: 1rem;
   color: white;
@@ -22,9 +22,9 @@
   transform: translate(-50%, -50%);
 
   h1 {
-    font-family: 'Yellowtail', 'Montserrat', sans-serif;
+    font-family: 'Bowlby One SC', 'Montserrat', sans-serif;
     font-weight: 400;
-    width: 40%;
+    width: 80%;
     text-align: center;
     font-size: 6rem;
     margin: 2rem auto 0;
@@ -34,7 +34,6 @@
   form {
     height: 75%;
     width: 100%;
-    padding-top: 2rem;
 
     input {
       font-family: 'Montserrat', sans-serif;
@@ -121,20 +120,11 @@
 
 @media only screen and (max-width: 1150px) {
   .form-container {
-    height: 90%;
-
-    h1 {
-      font-size: 3.5rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .form-container {
+    height: 87%;
 
     h1 {
       font-size: 3rem;
-      margin: 1rem auto;
+      margin: 1rem auto 0;
       width: 70%;
     }
 
@@ -142,7 +132,7 @@
       padding-top: 1rem;
 
       input {
-        height: 25px;
+        height: 30px;
         width: 85%;
       }
 
@@ -159,5 +149,56 @@
     height: 40px;
     font-size: 1.6rem;
   }
+}
 
+@media only screen and (max-width: 800px) {
+ 
+  #form-submit {
+      width: 125px;
+      padding: .7rem;
+      height: 30px;
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+  .form-container {
+    width: 95%;
+    top: 55%;
+    form { 
+      input {
+        font-size: 1.5rem;
+      }
+      textarea {
+        font-size: 1.5rem;
+      }
+    }
+    h1 {
+      font-size: 3rem;
+      width: 70%;
+    }
+
+    #form-submit {
+      width: 125px;
+      padding: .7rem;
+      height: 30px;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .form-container {
+    
+    h1 {
+      width: 100%;
+    }
+
+    form {
+      padding-top: 0;
+
+    }
+  }
 }

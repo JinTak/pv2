@@ -2,9 +2,12 @@
   height: 100%;
   width: 100%;
   position: relative;
-  background: linear-gradient(to top right, #f0b3ff, rgb(255, 136, 25));
+  background: linear-gradient(to top right, #b900ff, #0072ff);
 }
-.typewriter {
+.typewriter_2 {
+  display: none;
+}
+.typewriter_1 {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 100%, 50% 85%, 0% 85%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 85%, 75% 100%, 50% 85%, 0% 85%);
   border-radius: 2rem;
@@ -21,7 +24,6 @@
   font-family: 'Montserrat', sans-serif;
   padding-top: 5rem;
   transform: translate(-50%, -50%);
-
 
   h1 {
     text-align: center;
@@ -98,12 +100,101 @@
 }
 
 
-@media only screen and (max-width: 1620px) {
-  .typewriter {
-    font-size: 1rem;
+@media only screen and (max-width: 500px) {
+  .typewriter_1 {
+    display: none;
+  }
+  .typewriter_2 {
+    display: block;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 75% 93%, 75% 100%, 50% 93%, 0% 93%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 75% 93%, 75% 100%, 50% 93%, 0% 93%);
+    border-radius: 1rem;
+    color: white;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    height: 85%;
+    width: 97%;
+    top: 5%;
+    left: 50%;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2rem;
+    transform: translateX(-50%);
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-family: monospace;
+      overflow: hidden; 
+      white-space: nowrap;
+      margin: 0 auto 2.5rem;
+
+      animation: 
+        typing 4s steps(30, end);
+
+      &:nth-of-type(2) {
+        visibility: hidden;
+        animation: 
+          typing 4s 3s steps(30, end) forwards;
+      }
+      &:nth-of-type(3) {
+        visibility: hidden;
+        animation: 
+          typing 4s 4s steps(30, end) forwards;
+      }
+      &:nth-of-type(4) {
+        visibility: hidden;
+        animation: 
+          typing 4s 7.5s steps(30, end) forwards;
+      }
+      &:nth-of-type(5) {
+        visibility: hidden;
+        animation: 
+          typing 4s 11s steps(30, end) forwards;
+      }
+      &:nth-of-type(6) {
+        visibility: hidden;
+        animation: 
+          typing 4s 14.75s steps(30, end) forwards;
+      }
+      &:nth-of-type(7) {
+        visibility: hidden;
+        animation: 
+          typing 4s 22s steps(30, end) forwards;
+      }
+      &:nth-of-type(8) {
+        visibility: hidden;
+        animation: 
+          typing 4s 28.5s steps(30, end) forwards;
+      }
+    }
+    .montserrat {
+      font-size: 2.4rem;
+    }
+    .yellowtail {
+      font-size: 2.4rem;
+    }
+
     img {
-      height: 50px;
-      width: 50px;
+      height: 45px;
+      width: 45px;
+      margin: 0 1.5rem .6rem 0;
+      transform: scale(0);
+
+      &:nth-of-type(1) {
+        animation: fadeIn 1s 27s ease-in forwards;
+      }
+      &:nth-of-type(2) {
+        animation: fadeIn 1s 19.5s ease-in forwards;
+      }
+      &:nth-of-type(3) {
+        animation: fadeIn 1s 27s ease-in forwards;
+      }
+      &:nth-of-type(4) {
+        animation: fadeIn 1s 30.5s ease-in forwards;
+      }
     }
   }
 }

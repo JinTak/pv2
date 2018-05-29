@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { trigger,stagger,style,transition,animate,keyframes,query } from '@angular/animations';
 
 @Component({
@@ -21,10 +21,13 @@ import { trigger,stagger,style,transition,animate,keyframes,query } from '@angul
     ])
   ]
 })
-export class NavbarComponent {
-  // @HostBinding('attr.class') myClass='navbar-container';
+export class NavbarComponent implements OnInit {
   selectedItem: string = 'Home';
-
+  menu = './assets/hamburger.svg';
+  hamburgerMenuStatus: string;
+  hamburgerMenuOpen = 'flex';
+  hamburgerMenuClose = 'none';
+  innerWidth: any;  
   navbarText: string[] = [
     'Home',
     'About',
@@ -32,12 +35,49 @@ export class NavbarComponent {
     'Blog',
     'Contact'
   ]
+  @HostListener('window:resize', ['$event'])
 
-  constructor() { }
+  onResize(event) {
+    this.innerWidth = window.innerWidth;
+    if(this.innerWidth > 1100) {
+      this.hamburgerMenuStatus = this.hamburgerMenuOpen;
+      this.menu = './assets/hamburger.svg';
+    } else if(this.innerWidth <= 1100) {
+      this.hamburgerMenuStatus = this.hamburgerMenuClose;
+    }
+  }
+
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
+    if (this.innerWidth <= 1100) {
+      this.hamburgerMenuStatus = this.hamburgerMenuClose;
+    }
+  }
+
+  constructor() {
+    this.hamburgerMenuStatus = this.hamburgerMenuOpen;
+  }
 
   highlightNavItem(text) {
     this.selectedItem = text;
+    if (this.innerWidth > 1100) {
+      this.hamburgerMenuStatus = this.hamburgerMenuOpen;
+      this.menu = './assets/hamburger.svg';
+    } else if (this.innerWidth <= 1100) {
+      this.hamburgerMenuStatus = this.hamburgerMenuClose;
+      this.menu = './assets/hamburger.svg';      
+    }
   }
 
+  openNavBar() {
+    console.log(this.hamburgerMenuStatus)
+    if(this.hamburgerMenuStatus == this.hamburgerMenuClose){
+      this.hamburgerMenuStatus = this.hamburgerMenuOpen;
+      this.menu = './assets/close.svg';
+    } else {
+      this.hamburgerMenuStatus = this.hamburgerMenuClose;     
+      this.menu = './assets/hamburger.svg'; 
+    }
+  }
 
 }

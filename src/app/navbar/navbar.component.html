@@ -1,9 +1,14 @@
+<div class="hamburger-nav-container">
+  <div class="hamburger-nav" (click)="openNavBar()">
+    <img src="{{menu}}" alt="Menu">
+  </div>
+</div>
 
-<ul class="side-nav"  [@navItems]="navbarText.length" >
-    <li *ngFor="let text of navbarText" [ngClass]="{'active': selectedItem == text}" (click)="highlightNavItem(text)" class="side-nav__item">
-      <a routerLink="{{text | lowercase}}" class="side-nav__link">
-        <span>{{text}}</span>
-      </a>
+<ul class="side-nav" [@navItems]="navbarText.length" [style.display]='hamburgerMenuStatus'>
+  <li *ngFor="let text of navbarText" [ngClass]="{'active': selectedItem == text}" (click)="highlightNavItem(text)" class="side-nav__item">
+    <a routerLink="{{text | lowercase}}" class="side-nav__link">
+      <span>{{text}}</span>
+    </a>
   </li> 
 </ul>
 
