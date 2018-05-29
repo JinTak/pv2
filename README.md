@@ -1,3 +1,3 @@
 # Portfolio V2
 
-[www.jintak.co](jintak.co)
+[www.jintak.co](http://www.jintak.co)
