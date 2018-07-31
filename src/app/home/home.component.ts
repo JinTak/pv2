@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   myParams: object = {};
   width: number = 100;
   height: number = 100;
+  lightOn: boolean = true;
 
   ngOnInit() {
     this.myParams = {
@@ -43,7 +44,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
           }
         },
         'size': {
-          'value': 6,
+          'value': 5,
           'random': true,
           'anim': {
             'enable': false,
@@ -128,8 +129,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
       'right': 0,
       'bottom': 0,
     };
-
-    
   }
 
+  lightSwitch() {
+    this.lightOn = !this.lightOn;
+  }
 }

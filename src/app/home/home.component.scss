@@ -1,8 +1,8 @@
 .home-container {
     height: 100%;
     width: 100%;
-    background: radial-gradient(rgba(0, 153, 255, 0.3), rgba(0, 38, 253, 0.829));
     position: relative;
+    background: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +31,7 @@
         text-transform: uppercase;
         text-align: center;
         padding-top: 3rem;
-        color: #000;
+        color: #fff;
         letter-spacing: 1rem;
         text-shadow: 0 5px 7px rgba(0, 0, 0,.5);
     }
@@ -47,6 +47,49 @@
             height: 100%;
             width: 100%;
         }
+    }
+}
+
+#lightSwitch {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    z-index: 100;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    img {
+        width: 70px;
+        color: white;
+    }
+
+    &:hover img {
+        animation: shimmy .4s;
+    }
+}
+
+@keyframes shimmy {
+    0% {
+        transform: rotate(0);
+    }
+    33% {
+        transform: rotate(-20deg);
+    }
+    66% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+
+}
+
+.lightOn {
+    background: radial-gradient(rgba(0, 153, 255, 0.4), rgba(0, 38, 253, .9));
+    h3 {
+        color: #000;
     }
 }
 
