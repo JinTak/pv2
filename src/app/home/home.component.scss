@@ -3,6 +3,9 @@
     width: 100%;
     background: radial-gradient(rgba(0, 153, 255, 0.3), rgba(0, 38, 253, 0.829));
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     particles {
         position: absolute;
@@ -13,14 +16,14 @@
     }
 
     h1 {
-        font-family: 'Yellowtail', 'Montserrat', sans-serif;
+        font-family: 'Righteous', 'Yellowtail', 'Montserrat', sans-serif;
         font-size: 15rem;
         text-transform: uppercase;
         text-align: center;
         color: #fff;
         letter-spacing: 1rem;
         text-shadow: 0 7px 20px rgb(0, 0, 0);
-        padding-top: 2rem;
+        margin-top: -10rem;
     }
     h3 {
         font-family: 'Montserrat', sans-serif;
@@ -76,15 +79,17 @@
         }
     }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 400px) {
     .home-container {
         h1 {
             font-size: 6rem;
-            padding-top: 9rem;
             margin: 0;
         }
         h3 {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            text-shadow: 0 3px 5px rgba(0, 0, 0,.5);
+
             span {
                 display: none;
             }
