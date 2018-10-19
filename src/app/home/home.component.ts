@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   myParams: object = {};
   width: number = 100;
   height: number = 100;
-  lightOn: boolean = true;
+  lightOn: boolean = false;
 
   ngOnInit() {
     this.myParams = {
