@@ -3,10 +3,15 @@
   <particles [width]="width" [height]="height" [params]="myParams"></particles>
   <h1>Jin Tak</h1>
   <h3>Developer <span>|</span> Designer</h3>
-  <!-- <div class="profile-pic-container">
-    <img src="./assets/wiz.png" alt="profile pic">
-  </div> -->
+  <div class="links-container">
+    <a [ngClass]="{'white': !lightOn}" class="link-icon" href="www.linkedin.com/in/jin-tak" target="_blank" data-tilt>
+      <img src="../../assets/linkedin.png" alt="linkedin" />
+    </a>
+    <a [ngClass]="{'white': !lightOn}" class="link-icon" href="https://codepen.io/TikyTak/" target="_blank">
+      <img src="../../assets/codepen.svg" alt="codepen" />
+    </a>
+    <a [ngClass]="{'white': !lightOn}" class="link-icon" href="https://github.com/JinTak" target="_blank">
+      <img src="../../assets/github.png" alt="github" />
+    </a>
+  </div>
 </div>
-
-
-

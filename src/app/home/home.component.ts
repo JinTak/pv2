@@ -129,6 +129,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       'right': 0,
       'bottom': 0,
     };
+
   }
 
   lightSwitch() {

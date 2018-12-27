@@ -99,7 +99,7 @@
   to { transform: scale(1); }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
   .typewriter_1 {
     width: 95%;
     height: 90%;
@@ -107,7 +107,7 @@
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
   .typewriter_1 {
     display: none;
   }
@@ -117,7 +117,7 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 75% 93%, 75% 100%, 50% 93%, 0% 93%);
     border-radius: 1rem;
     color: white;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0,.5);
     position: absolute;
     height: 85%;
     width: 97%;
