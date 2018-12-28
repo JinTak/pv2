@@ -1,7 +1,15 @@
 <div class="home-container" [ngClass]="{'lightOn': lightOn}">
   <button id="lightSwitch" (click)="lightSwitch()"><img src="./assets/lightbulb.png" alt=""></button>
   <particles [width]="width" [height]="height" [params]="myParams"></particles>
-  <h1>Jin Tak</h1>
+  <h1>
+    <span class="name">J</span>
+    <span class="name">i</span>
+    <span class="name">n</span>
+    &nbsp;
+    <span class="name">T</span>
+    <span class="name">a</span>
+    <span class="name">k</span>
+  </h1>
   <h3>Developer <span>|</span> Designer</h3>
   <div class="links-container">
     <a [ngClass]="{'white': !lightOn}" class="link-icon" href="https://www.linkedin.com/in/jin-tak" target="_blank"
@@ -13,6 +21,9 @@
     </a>
     <a [ngClass]="{'white': !lightOn}" class="link-icon" href="https://github.com/JinTak" target="_blank">
       <img src="../../assets/github.png" alt="github" />
+    </a>
+    <a [ngClass]="{'white': !lightOn}" class="link-icon" href="https://twitter.com/jintak23" target="_blank">
+      <img src="../../assets/twitter.png" alt="twitter" />
     </a>
   </div>
 </div>
