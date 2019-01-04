@@ -16,23 +16,23 @@ import { trigger, stagger, style, transition, animate, keyframes, query } from '
             style({ opacity: 0, transform: 'translateX(-75%)', offset: 0 }),
             style({ opacity: .5, transform: 'translateX(35px)', offset: .3 }),
             style({ opacity: 1, transform: 'translateX(0)', offset: 1 }),
-        ]))]), { optional: true })
+          ]))]), { optional: true })
       ])
     ])
   ]
 })
 export class ProjectsComponent {
 
-  constructor() {}
+  constructor() { }
 
   projects = [
     {
-      title: 'Easy Mass',
-      img: 'EasyMass',
-      url: 'https://easymass.herokuapp.com/',
-      github: 'https://github.com/JinTak/Mass-React',
-      description: 'Calorie / Macro tracking app to help with fitness goals',
-      tech: 'React JS | Express JS | Node JS | Postgres'
+      title: 'Denver Nuggets Fansite',
+      img: 'Nuggets',
+      url: 'https://jintak.github.io/nuggets-new/',
+      github: 'https://github.com/JinTak/nuggets-new',
+      description: 'Denver Nuggets Fansite because I love the Nuggets',
+      tech: 'HTML5 | CSS3 | SCSS '
     },
     {
       title: 'Holistic Blog',
@@ -43,12 +43,12 @@ export class ProjectsComponent {
       tech: 'Angular 5 | Node JS | Express JS | MongoDB | Postgres'
     },
     {
-      title: 'Denver Nuggets Fansite',
-      img: 'Nuggets',
-      url: 'https://jintak.github.io/nuggets/',
-      github: 'https://github.com/JinTak/nuggets',
-      description: 'Denver Nuggets Fansite because I love the Nuggets',
-      tech: 'HTML5 | CSS3 | SCSS '
+      title: 'Easy Mass',
+      img: 'EasyMass',
+      url: 'https://easymass.herokuapp.com/',
+      github: 'https://github.com/JinTak/Mass-React',
+      description: 'Calorie / Macro tracking app to help with fitness goals',
+      tech: 'React JS | Express JS | Node JS | Postgres'
     },
     {
       title: 'Skycast',

@@ -26,16 +26,16 @@
     }
     
     &:first-child {
-      background: linear-gradient(45deg, #fa8900,#fadfaa);
+      background: linear-gradient(45deg, #f4af22 ,#459cf8);
     }
     &:nth-child(2) {
       background: linear-gradient(45deg, #3acf1c, #c3faae);  
     }
     &:nth-child(3) {
-      background: linear-gradient(45deg, #46b0f1, #f9fc5d); 
+      background: linear-gradient(45deg, #fa8900,#fadfaa); 
       .project-content {
         h1 {
-          font-size: 2.7rem;
+          // font-size: 2.7rem;
         }
       }  
     }
@@ -73,7 +73,7 @@
     .project-content {
       height: 275px;
       width: 100%;
-      text-shadow: 0 2px 7px rgba(0,0,0,.4);
+      text-shadow: 0 2px 6px rgba(0,0,0,.4);
       text-align: center;
       position: relative;
 
